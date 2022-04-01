@@ -67,7 +67,11 @@ func main() {
 	}
 	//tercera formula para hallar nuestro tercer bloque 
 	ter := div % 10*3
-
-	fmt.Printf("%X%X%X \n",div,val*3,ter)
+	//Mostramos el resultado
+	if val < 4 {
+		fmt.Printf("#%X0%X%X \n",div,val*3,ter)
+	}else {
+		fmt.Printf("#%X%X%X \n",div,val*3,ter)
+	}
 }
 // things to study : for range, String package functions, map literals, division entre enteros
